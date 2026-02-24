@@ -131,5 +131,16 @@ export const projects = [
       { icon: SiRabbitmq, name: "RabbitMQ", color: "#FF6600" },
       { icon: SiDocker, name: "Docker", color: "#2496ED" }
     ]
+  }, 
+  {
+    title: "Courses Spring Security",
+    description: "Este proyecto es una aplicación de ejemplo construida con Spring Boot y utiliza Spring Security para manejar autenticación y autorización. Está diseñado como una base para entender cómo integrar seguridad en servicios RESTful.",
+    github: "https://github.com/xChrisxY/spring-courses-security",
+    technologies: [
+      { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
+      { icon: DiJava, name: "Java", color: "#007396" },
+      { icon: SiMysql, name: "MySQL", color: "#336791" },
+      { icon: SiJsonwebtokens, name: "JWT", color: "#000000" }
+    ]
   }
 ];

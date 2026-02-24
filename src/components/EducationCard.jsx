@@ -81,9 +81,16 @@ export default function EducationCard({ education }) {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {ciscoCourses.map((course, index) => (
+                        <a 
+                              key={index}
+                              href={course.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-3 bg-slate-800/50 p-3 rounded-lg hover:bg-slate-800 transition-all hover:scale-[1.02] group"
+                        >
                 <div 
                   key={index}
-                  className="flex items-center gap-3 bg-slate-800/50 p-3 rounded-lg hover:bg-slate-800 transition-colors group"
+                  className="flex items-center gap-3 bg-slate-800/50 rounded-lg hover:bg-slate-800 transition-colors group"
                 >
                   <course.icon 
                     style={{ color: course.color }} 
@@ -94,6 +101,10 @@ export default function EducationCard({ education }) {
                     {course.name}
                   </span>
                 </div>
+                        <svg className="w-4 h-4 text-slate-500 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                </a>
               ))}
             </div>
           </div>
