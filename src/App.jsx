@@ -24,7 +24,7 @@ export default function App() {
             Java Backend Engineer | Software Engineer | Python Developer
           </p>
 
-          <p className="mt-8 mx-10 text-slate-300 leading-relaxed text-justify">
+          <p className="mt-8  text-slate-300 leading-relaxed text-justify">
             ¡Hola! 👋 Soy Christopher Yahir, Ingeniero de Software y Desarrollador Backend con más de 3 años de experiencia desarrollando aplicaciones web modernas a través de proyectos profesionales, académicos y personales.
             Soy un apasionado por la construcción de sistemas escalables y seguros utilizando FastAPI + Django + Flask + Spring Boot complementando con herramientas DevOps como Docker, Kubernetes y AWS. <br />
             Me enfoco en la seguridad, una arquitectura limpia, diseño de base de datos y de API RESTful, además de la integración con frontents modernos.
