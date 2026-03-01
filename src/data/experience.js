@@ -71,5 +71,22 @@ export const experiencie = [
             document: "/documents/constancia.pdf",
             type_document: "Constancia"
       },
+      {
+            role: "Java Backend Engineer - Sys Admin (MySQL)",
+            company: "IMA Chiapas",
+            date: "November 2023 - August 2024",
+            url: "https://www.researchgate.net/publication/396469897_Automated_IoT_System_for_Vertical_Hydroponics_at_Home_with_Real-Time_Monitoring_and_Control",
+            location: "Tuxtla Gutierrez, Chiapas, México",
+            description: "Maintained and administered servers on AWS as a SysAdmin, using RDS with MySQL for database management. Designed and modeled databases, implemented migrations, and worked with transactions to ensure data integrity. Deployed and managed the application with Docker and Docker Compose. Contributed to the backend application built with Java + Spring Boot, handling database connections and migration code.",
+            technologies: [
+                  { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
+                  { icon: DiJava, name: "Java", color: "#007396" },
+                  { icon: SiMysql, name: "MySQL", color: "#336791" },
+                  { icon: SiDocker, name: "Docker", color: "#2496ED" },
+                  { icon: SiJsonwebtokens, name: "JWT", color: "#000000" }
+            ], 
+            document: "/documents/constancia.pdf",
+            type_document: "Constancia"
+      },
       
 ];

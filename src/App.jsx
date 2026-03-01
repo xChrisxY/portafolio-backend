@@ -6,6 +6,7 @@ import { experiencie } from "./data/experience";
 import { education } from "./data/education";
 import ExperienceCard from "./components/ExperienceCard";
 import EducationCard from "./components/EducationCard";
+import YoutubeCard from "./components/YoutubeCard";
 
 export default function App() {
   return (
@@ -99,6 +100,7 @@ export default function App() {
         </div>
       </section>
 
+      <YoutubeCard />
     </div>
   );
 }

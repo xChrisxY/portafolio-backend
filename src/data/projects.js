@@ -9,13 +9,13 @@ import {
   SiMongodb,
   SiRabbitmq,
   SiGraphql,
-  //SiPhaser,
-  //SiJavafx,
   SiJsonwebtokens,
   SiTailwindcss,
   SiMysql,
   SiJavascript,
-  SiGithubactions
+  SiGithubactions,
+  SiKotlin,
+  SiFlask
 } from "react-icons/si";
 
 import { DiJava, DiMysql } from "react-icons/di";
@@ -75,7 +75,6 @@ export const projects = [
     github: "https://github.com/xChrisxY/RestaurantSimulator",
     demo: "https://demo",
     technologies: [
-      //{ icon: SiJavafx, name: "FXGL/JavaFX", color: "#5382a1" },
       { icon: DiJava, name: "Java", color: "#007396" }
     ]
   },
@@ -139,6 +138,27 @@ export const projects = [
     technologies: [
       { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
       { icon: DiJava, name: "Java", color: "#007396" },
+      { icon: SiMysql, name: "MySQL", color: "#336791" },
+      { icon: SiJsonwebtokens, name: "JWT", color: "#000000" }
+    ]
+  },
+  {
+    title: "Events App",
+    description: " Mobile application developed in Kotlin, with authentication and CRUD operations, in addition to the use of Shared Preferences, coroutines, notifications and image management.",
+    github: "https://github.com/xChrisxY/Kotlin-eventos",
+    technologies: [
+      { icon: SiKotlin, name: "Kotlin", color: "#6DB33F" },
+      { icon: SiMysql, name: "MySQL", color: "#336791" },
+      { icon: SiJsonwebtokens, name: "JWT", color: "#000000" }
+    ]
+  },
+  {
+    title: "Canacintra Backend",
+    description: "Backend API for the Canacintra hydroponic management system. Built with Flask, SQLAlchemy and JWT authentication. ",
+    github: "https://github.com/xChrisxY/canacintra_backend",
+    technologies: [
+      
+      { icon: SiFlask, name: "Flask", color: "#2496ED" },
       { icon: SiMysql, name: "MySQL", color: "#336791" },
       { icon: SiJsonwebtokens, name: "JWT", color: "#000000" }
     ]
