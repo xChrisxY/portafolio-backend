@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# CV local (la copia pública vive en public/documents/)
+/CV_*.pdf

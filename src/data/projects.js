@@ -1,166 +1,194 @@
-import { 
-  SiSpring, 
-  SiSpringboot, 
-  SiPostgresql, 
+import { DiJava } from "react-icons/di";
+import {
+  SiSpringboot,
+  SiPostgresql,
   SiDocker,
   SiDjango,
   SiPython,
   SiFastapi,
   SiMongodb,
   SiRabbitmq,
-  SiGraphql,
   SiJsonwebtokens,
-  SiTailwindcss,
   SiMysql,
-  SiJavascript,
-  SiGithubactions,
   SiKotlin,
-  SiFlask
+  SiFlask,
+  SiGo,
+  SiSqlite,
+  SiReact,
+  SiTypescript,
+  SiKubernetes,
+  SiGithubactions,
+  SiNextdotjs,
+  SiRaspberrypi,
+  SiAmazonwebservices,
 } from "react-icons/si";
 
-import { DiJava, DiMysql } from "react-icons/di";
+export const featuredProjects = [
+  {
+    title: "CADOFI — Sistema de Gestión Financiera",
+    tagline: "Plataforma financiera empresarial",
+    description:
+      "Aplicación completa con Spring Boot + React/TypeScript: control de acceso por roles, seguimiento de deuda y pipelines de CI/CD. Desplegada en Kubernetes sobre DigitalOcean.",
+    github: null,
+    technologies: [
+      { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
+      { icon: DiJava, name: "Java", color: "#007396" },
+      { icon: SiReact, name: "React", color: "#61DAFB" },
+      { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+      { icon: SiKubernetes, name: "Kubernetes", color: "#326CE5" },
+      { icon: SiGithubactions, name: "CI/CD", color: "#2088FF" },
+    ],
+  },
+  {
+    title: "MedMonitor — Telemonitoreo Médico",
+    tagline: "Seguimiento de enfermedades crónicas",
+    description:
+      "Backend en Go (Gin) + SQLite para telemonitoreo de pacientes con dashboard en React. APIs cifradas y despliegue continuo hacia AWS S3.",
+    github: null,
+    technologies: [
+      { icon: SiGo, name: "Go", color: "#00ADD8" },
+      { icon: SiSqlite, name: "SQLite", color: "#003B57" },
+      { icon: SiReact, name: "React", color: "#61DAFB" },
+      { icon: SiAmazonwebservices, name: "AWS S3", color: "#FF9900" },
+      { icon: SiGithubactions, name: "CI/CD", color: "#2088FF" },
+    ],
+  },
+  {
+    title: "Hydrop — Sistema IoT de Riego",
+    tagline: "IoT + monitoreo en tiempo real",
+    description:
+      "Pipeline de sensores con Raspberry Pi, backend en Flask y frontend en React/Next.js para monitoreo y control en tiempo real de cultivos hidropónicos.",
+    github: null,
+    technologies: [
+      { icon: SiRaspberrypi, name: "Raspberry Pi", color: "#C51A4A" },
+      { icon: SiFlask, name: "Flask", color: "#9B9B9B" },
+      { icon: SiPython, name: "Python", color: "#3776AB" },
+      { icon: SiNextdotjs, name: "Next.js", color: "#FFFFFF" },
+      { icon: SiReact, name: "React", color: "#61DAFB" },
+    ],
+  },
+];
 
+// Repositorios públicos ordenados por número de commits
 export const projects = [
   {
-    title: "Love Microservice",
-    description: "Microservicio desarrollado con Spring Boot, arquitectura hexagonal y PostgreSQL. Implementa autenticación JWT, Docker y buenas prácticas de Clean Architecture.",
-    github: "https://github.com/xChrisxY/spring-boot-memories",
-    demo: "https://demo",
-    technologies: [
-      { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
-      { icon: DiJava, name: "Java", color: "#007396" },
-      { icon: SiPostgresql, name: "PostgreSQL", color: "#336791" },
-      { icon: SiDocker, name: "Docker", color: "#2496ED" },
-      { icon: SiGithubactions, name: "JWT", color: "#000000" }
-    ]
-  },
-  {
-    title: "Udemy Project",
-    description: "Proyecto de ejemplo (simulador de Udemy) que implementa una arquitectura hexagonal (ports & adapters) con Spring Boot, Maven, buenas prácticas de dominio y manejo de roles con seguridad en rutas",
-    github: "https://github.com/xChrisxY/Arquitectura-Hexagonal-Spring-Security",
-    demo: "https://demo",
-    technologies: [
-      { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
-      { icon: DiJava, name: "Java", color: "#007396" },
-      { icon: SiPostgresql, name: "PostgreSQL", color: "#336791" },
-      { icon: SiDocker, name: "Docker", color: "#2496ED" }
-    ]
-  },
-  {
-    title: "Gestión de productos y proveedores",
-    description: "Proyecto Django con arquitectura MTV y API REST (Django REST Framework) para la gestión de productos y proveedores. Incluye integración con TailwindCSS para los estilos front-end.",
-    github: "https://github.com/xChrisxY/almaximo-python-practice",
-    demo: "https://demo",
-    technologies: [
-      { icon: SiDjango, name: "Django", color: "#092E20" },
-      { icon: SiPython, name: "Python", color: "#3776AB" },
-      { icon: SiPostgresql, name: "PostgreSQL", color: "#336791" },
-      { icon: SiTailwindcss, name: "TailwindCSS", color: "#06B6D4" }
-    ]
-  },
-  {
-    title: "Event Management API",
-    description: "API RESTful para gestión de eventos desarrollada con Django REST Framework y autenticación JWT. Permite crear y administrar eventos, listas de artículos, imágenes, notas de audio y usuarios.",
-    github: "https://github.com/xChrisxY/django-events-backend",
-    technologies: [
-      { icon: SiDjango, name: "Django", color: "#092E20" },
-      { icon: SiPython, name: "Python", color: "#3776AB" },
-      { icon: SiMysql, name: "MySQL", color: "#336791" },
-      { icon: SiJsonwebtokens, name: "JWT", color: "#000000" }
-    ]
-  },
-  {
     title: "RestaurantSimulator",
-    description: "Restaurant Simulator es una aplicación de simulación desarrollada con FXGL que modela el funcionamiento de un restaurante, incluyendo la gestión de clientes, meseros y cocineros utilizando conceptos de concurrencia y multithreading.",
+    commits: 24,
+    description:
+      "Simulador de restaurante construido con FXGL en Java: modela clientes, meseros y cocineros aplicando concurrencia, multithreading y patrones de diseño.",
     github: "https://github.com/xChrisxY/RestaurantSimulator",
-    demo: "https://demo",
-    technologies: [
-      { icon: DiJava, name: "Java", color: "#007396" }
-    ]
+    technologies: [{ icon: DiJava, name: "Java · FXGL", color: "#007396" }],
   },
   {
-    title: "Ship Scape",
-    description: "Ship Scape es un juego arcade retro desarrollado con Phaser 3 donde controlas una nave espacial que debe esquivar enemigos, recolectar power-ups y sobrevivir el mayor tiempo posible.",
-    github: "https://github.com/xChrisxY/phaser-game",
-    technologies: [
-      //{ icon: SiPhaser, name: "Phaser 3", color: "#4B8BBE" },
-      { icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" }
-    ]
-  },
-  {
-    title: "Sistema de Pedidos Distribuido",
-    description: "Microservicio de órdenes construido con FastAPI y arquitectura hexagonal para un sistema tipo Uber Eats/Rappi.",
-    github: "https://github.com/xChrisxY/orders-service",
-    technologies: [
-      { icon: SiFastapi, name: "FastAPI", color: "#009688" },
-      { icon: SiPython, name: "Python", color: "#3776AB" },
-      { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
-      { icon: SiRabbitmq, name: "RabbitMQ", color: "#FF6600" }
-    ]
-  },
-  {
-    title: "Microservicio de restaurantes",
-    description: "Este microservicio gestiona toda la información relacionada con restaurantes en un sistema de pedidos distribuido.",
-    github: "https://github.com/xChrisxY/resturant-service",
-    technologies: [
-      { icon: SiFastapi, name: "FastAPI", color: "#009688" },
-      { icon: SiPython, name: "Python", color: "#3776AB" },
-      { icon: SiMongodb, name: "MongoDB", color: "#47A248" }
-    ]
-  },
-  {
-    title: "API GraphQL para gestión de libros",
-    description: "Una API de GraphQL con Python y Django, el framework backend, junto a Graphene.",
-    github: "https://github.com/xChrisxY/resturant-service",
-    technologies: [
-      { icon: SiDjango, name: "Django", color: "#092E20" },
-      { icon: SiGraphql, name: "GraphQL", color: "#E10098" },
-      { icon: SiPython, name: "Python", color: "#3776AB" },
-      { icon: SiPostgresql, name: "PostgreSQL", color: "#336791" }
-    ]
-  },
-  {
-    title: "Third Party API Integration",
-    description: "Este proyecto implementa una arquitectura hexagonal con FastAPI, MongoDB y RabbitMQ, para sincronizar información con Factura.com.",
+    title: "third_party_services",
+    commits: 16,
+    description:
+      "Arquitectura hexagonal con FastAPI, MongoDB y RabbitMQ para sincronizar información con servicios externos (Factura.com) de forma resiliente.",
     github: "https://github.com/xChrisxY/third_party_services",
     technologies: [
       { icon: SiFastapi, name: "FastAPI", color: "#009688" },
       { icon: SiPython, name: "Python", color: "#3776AB" },
       { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
       { icon: SiRabbitmq, name: "RabbitMQ", color: "#FF6600" },
-      { icon: SiDocker, name: "Docker", color: "#2496ED" }
-    ]
-  }, 
+      { icon: SiDocker, name: "Docker", color: "#2496ED" },
+    ],
+  },
   {
-    title: "Courses Spring Security",
-    description: "Este proyecto es una aplicación de ejemplo construida con Spring Boot y utiliza Spring Security para manejar autenticación y autorización. Está diseñado como una base para entender cómo integrar seguridad en servicios RESTful.",
+    title: "spring-boot-memories",
+    commits: 15,
+    description:
+      "Microservicio con Spring Boot, arquitectura hexagonal y PostgreSQL. Autenticación JWT, contenedorización con Docker y buenas prácticas de Clean Architecture.",
+    github: "https://github.com/xChrisxY/spring-boot-memories",
+    technologies: [
+      { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
+      { icon: DiJava, name: "Java", color: "#007396" },
+      { icon: SiPostgresql, name: "PostgreSQL", color: "#4169E1" },
+      { icon: SiDocker, name: "Docker", color: "#2496ED" },
+      { icon: SiJsonwebtokens, name: "JWT", color: "#D63AFF" },
+    ],
+  },
+  {
+    title: "love-app",
+    commits: 12,
+    description:
+      "Frontend en React + TypeScript que acompaña al microservicio de memorias: consumo de API REST, autenticación y experiencia de usuario moderna.",
+    github: "https://github.com/xChrisxY/love-app",
+    technologies: [
+      { icon: SiReact, name: "React", color: "#61DAFB" },
+      { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+    ],
+  },
+  {
+    title: "canacintra_backend",
+    commits: 12,
+    description:
+      "API backend para un sistema de gestión hidropónica de CANACINTRA: Flask, SQLAlchemy y autenticación JWT.",
+    github: "https://github.com/xChrisxY/canacintra_backend",
+    technologies: [
+      { icon: SiFlask, name: "Flask", color: "#9B9B9B" },
+      { icon: SiPython, name: "Python", color: "#3776AB" },
+      { icon: SiMysql, name: "MySQL", color: "#4479A1" },
+      { icon: SiJsonwebtokens, name: "JWT", color: "#D63AFF" },
+    ],
+  },
+  {
+    title: "Kotlin-eventos",
+    commits: 10,
+    description:
+      "Aplicación móvil en Kotlin con autenticación, CRUD, Shared Preferences, corrutinas, notificaciones y gestión de imágenes.",
+    github: "https://github.com/xChrisxY/Kotlin-eventos",
+    technologies: [
+      { icon: SiKotlin, name: "Kotlin", color: "#7F52FF" },
+      { icon: SiMysql, name: "MySQL", color: "#4479A1" },
+      { icon: SiJsonwebtokens, name: "JWT", color: "#D63AFF" },
+    ],
+  },
+  {
+    title: "spring-courses-security",
+    commits: 9,
+    description:
+      "Base de aplicación con Spring Boot y Spring Security: autenticación y autorización para servicios RESTful con roles y permisos.",
     github: "https://github.com/xChrisxY/spring-courses-security",
     technologies: [
       { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
       { icon: DiJava, name: "Java", color: "#007396" },
-      { icon: SiMysql, name: "MySQL", color: "#336791" },
-      { icon: SiJsonwebtokens, name: "JWT", color: "#000000" }
-    ]
+      { icon: SiMysql, name: "MySQL", color: "#4479A1" },
+    ],
   },
   {
-    title: "Events App",
-    description: " Mobile application developed in Kotlin, with authentication and CRUD operations, in addition to the use of Shared Preferences, coroutines, notifications and image management.",
-    github: "https://github.com/xChrisxY/Kotlin-eventos",
+    title: "SMARTLIGHTS-TGZ",
+    commits: 9,
+    description:
+      "Algoritmo genético para la optimización dinámica del alumbrado público inteligente en Tuxtla Gutiérrez.",
+    github: "https://github.com/xChrisxY/SMARTLIGHTS-TGZ",
     technologies: [
-      { icon: SiKotlin, name: "Kotlin", color: "#6DB33F" },
-      { icon: SiMysql, name: "MySQL", color: "#336791" },
-      { icon: SiJsonwebtokens, name: "JWT", color: "#000000" }
-    ]
+      { icon: SiPython, name: "Python", color: "#3776AB" },
+      { icon: SiDjango, name: "Django", color: "#092E20" },
+    ],
   },
   {
-    title: "Canacintra Backend",
-    description: "Backend API for the Canacintra hydroponic management system. Built with Flask, SQLAlchemy and JWT authentication. ",
-    github: "https://github.com/xChrisxY/canacintra_backend",
+    title: "django-events-backend",
+    commits: 8,
+    description:
+      "API RESTful para gestión de eventos con Django REST Framework y JWT: eventos, listas de artículos, imágenes, notas de audio y usuarios.",
+    github: "https://github.com/xChrisxY/django-events-backend",
     technologies: [
-      
-      { icon: SiFlask, name: "Flask", color: "#2496ED" },
-      { icon: SiMysql, name: "MySQL", color: "#336791" },
-      { icon: SiJsonwebtokens, name: "JWT", color: "#000000" }
-    ]
-  }
+      { icon: SiDjango, name: "Django REST", color: "#092E20" },
+      { icon: SiPython, name: "Python", color: "#3776AB" },
+      { icon: SiMysql, name: "MySQL", color: "#4479A1" },
+      { icon: SiJsonwebtokens, name: "JWT", color: "#D63AFF" },
+    ],
+  },
+  {
+    title: "spring-courses",
+    commits: 7,
+    description:
+      "Plataforma de gestión de cursos con Spring Boot: arquitectura en capas, persistencia relacional y operaciones CRUD completas.",
+    github: "https://github.com/xChrisxY/spring-courses",
+    technologies: [
+      { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
+      { icon: DiJava, name: "Java", color: "#007396" },
+      { icon: SiMysql, name: "MySQL", color: "#4479A1" },
+    ],
+  },
 ];
