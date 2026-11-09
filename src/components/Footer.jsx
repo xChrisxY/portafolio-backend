@@ -34,7 +34,7 @@ export default function Footer() {
               <MdEmail size={18} />
               christopheryahirm@gmail.com
             </a>
-            <a href="/documents/CV_Christopher_Moreno_ES.pdf" download className="btn-ghost">
+            <a href="/documents/CV_Christopher_Moreno_EN.pdf" download className="btn-ghost">
               Descargar CV ↓
             </a>
           </div>

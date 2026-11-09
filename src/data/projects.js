@@ -18,17 +18,29 @@ import {
   SiTypescript,
   SiKubernetes,
   SiGithubactions,
-  SiNextdotjs,
-  SiRaspberrypi,
+  SiAmazonecs,
   SiAmazonwebservices,
 } from "react-icons/si";
 
 export const featuredProjects = [
   {
+    title: "Event Logging System — Observabilidad",
+    tagline: "Plataforma inspirada en Sentry",
+    description:
+      "Backend Go/chi sobre PostgreSQL con arquitectura en capas y dashboard en tiempo real vía WebSocket. Despliegue en ECS Fargate para conexiones persistentes y CI/CD hacia AWS.",
+    github: null,
+    technologies: [
+      { icon: SiGo, name: "Go · chi", color: "#00ADD8" },
+      { icon: SiPostgresql, name: "PostgreSQL", color: "#4169E1" },
+      { icon: SiAmazonecs, name: "ECS Fargate", color: "#FF9900" },
+      { icon: SiGithubactions, name: "CI/CD", color: "#2088FF" },
+    ],
+  },
+  {
     title: "CADOFI — Sistema de Gestión Financiera",
     tagline: "Plataforma financiera empresarial",
     description:
-      "Aplicación completa con Spring Boot + React/TypeScript: control de acceso por roles, seguimiento de deuda y pipelines de CI/CD. Desplegada en Kubernetes sobre DigitalOcean.",
+      "Aplicación Spring Boot + React/TypeScript con control de acceso por roles, seguimiento de deuda y dashboards de reportes. Contenedorizada y orquestada en Kubernetes (DigitalOcean).",
     github: null,
     technologies: [
       { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F" },
@@ -43,28 +55,14 @@ export const featuredProjects = [
     title: "MedMonitor — Telemonitoreo Médico",
     tagline: "Seguimiento de enfermedades crónicas",
     description:
-      "Backend en Go (Gin) + SQLite para telemonitoreo de pacientes con dashboard en React. APIs cifradas y despliegue continuo hacia AWS S3.",
+      "Backend en Go + SQLite con flujos de datos cifrados y dashboard en React para seguimiento de enfermedades crónicas. CI/CD y despliegue en AWS.",
     github: null,
     technologies: [
       { icon: SiGo, name: "Go", color: "#00ADD8" },
       { icon: SiSqlite, name: "SQLite", color: "#003B57" },
       { icon: SiReact, name: "React", color: "#61DAFB" },
-      { icon: SiAmazonwebservices, name: "AWS S3", color: "#FF9900" },
+      { icon: SiAmazonwebservices, name: "AWS", color: "#FF9900" },
       { icon: SiGithubactions, name: "CI/CD", color: "#2088FF" },
-    ],
-  },
-  {
-    title: "Hydrop — Sistema IoT de Riego",
-    tagline: "IoT + monitoreo en tiempo real",
-    description:
-      "Pipeline de sensores con Raspberry Pi, backend en Flask y frontend en React/Next.js para monitoreo y control en tiempo real de cultivos hidropónicos.",
-    github: null,
-    technologies: [
-      { icon: SiRaspberrypi, name: "Raspberry Pi", color: "#C51A4A" },
-      { icon: SiFlask, name: "Flask", color: "#9B9B9B" },
-      { icon: SiPython, name: "Python", color: "#3776AB" },
-      { icon: SiNextdotjs, name: "Next.js", color: "#FFFFFF" },
-      { icon: SiReact, name: "React", color: "#61DAFB" },
     ],
   },
 ];

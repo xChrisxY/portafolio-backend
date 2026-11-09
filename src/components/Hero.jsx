@@ -49,18 +49,18 @@ export default function Hero() {
 
           <Reveal delay={160}>
             <p className="mt-5 font-mono text-sm tracking-wide text-gold-300 sm:text-base">
-              Ingeniero de Software · Backend Java &amp; Python · Líder Técnico
+              Backend Developer &amp; AI Engineer · Cloud-Native AWS · Líder Técnico
             </p>
           </Reveal>
 
           <Reveal delay={240}>
             <p className="mt-6 max-w-xl leading-relaxed text-slate-400">
-              Más de 3 años construyendo sistemas backend con{" "}
-              <span className="text-slate-200">Spring Boot</span> y{" "}
-              <span className="text-slate-200">Python</span>. Actualmente lidero el desarrollo de una
-              plataforma de manufactura (MES + ERP + app móvil) en Software Bank. Base sólida en
-              arquitectura limpia, cloud (AWS) y DevOps, con contribuciones activas a código abierto
-              y contenido técnico en YouTube.
+              Ingeniero de Software especializado en{" "}
+              <span className="text-slate-200">backend, sistemas distribuidos</span> y arquitectura{" "}
+              <span className="text-slate-200">cloud-native</span>. Diseño y entrego sistemas en
+              producción con Java, Python y AWS, con especialización creciente en{" "}
+              <span className="text-slate-200">ingeniería de IA</span> (RAG, agentes, MCP). Lidero
+              decisiones de arquitectura y coordino equipos de desarrollo.
             </p>
           </Reveal>
 
@@ -69,7 +69,7 @@ export default function Hero() {
               <a href="#proyectos" className="btn-primary">
                 Ver proyectos →
               </a>
-              <a href="/documents/CV_Christopher_Moreno_ES.pdf" download className="btn-ghost">
+              <a href="/documents/CV_Christopher_Moreno_EN.pdf" download className="btn-ghost">
                 Descargar CV ↓
               </a>
               <div className="ml-1 flex items-center gap-1">
@@ -135,7 +135,7 @@ export default function Hero() {
                   líder_técnico @ <span className="text-gold-300">softwarebank</span>
                 </p>
                 <p className="text-slate-500">$ stack --actual</p>
-                <p className="text-slate-300">java · erpnext · flutter</p>
+                <p className="text-slate-300">java · aws · rag · erpnext</p>
                 <p className="text-slate-500">$ estado</p>
                 <p className="text-emerald-300">
                   liderando equipo multidisciplinario<span className="animate-pulse">▌</span>

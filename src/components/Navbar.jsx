@@ -44,7 +44,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="/documents/CV_Christopher_Moreno_ES.pdf" download className="btn-primary !px-4 !py-2 text-sm">
+          <a href="/documents/CV_Christopher_Moreno_EN.pdf" download className="btn-primary !px-4 !py-2 text-sm">
             CV ↓
           </a>
         </div>
@@ -73,7 +73,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/documents/CV_Christopher_Moreno_ES.pdf"
+            href="/documents/CV_Christopher_Moreno_EN.pdf"
             download
             className="btn-primary mt-4 w-full text-sm"
             onClick={() => setOpen(false)}
